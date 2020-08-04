@@ -7,9 +7,11 @@ body {
     font-weight: 350;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 auto;
+    width: 100%;
 }
 h2 {
     font-size: 5em;
+    max-lines: 2;
     margin: 0 auto;
 }
 h3 {
@@ -33,39 +35,51 @@ footer {
 /*--------------------------------------------------------------
 # Nav-Menu
 --------------------------------------------------------------*/
-#main-nav {
+nav {
     background-color:  #1a1d25;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
 }
-#main-nav .nav-menu {
+nav .nav-menu {
     list-style: none;
     padding: 0 10px;
     display: inline;
 }
-#main-nav #logo {
+nav #logo {
     display: inline-block;
 }
-#main-nav h1 a {
+nav h1 a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
     padding-left: 20px;
 }
-#main-nav .nav-menu li {
+nav .nav-menu a {
     display: inline;
     padding: 0 10px;
 }
-#main-nav .nav-menu li a {
+nav .nav-menu a {
     color: #eee;
     text-decoration: none;
 }
-#main-nav .nav-menu li a:hover {
+nav .nav-menu a:hover {
     color: #2979FF;
 }
-
+.dropdown {
+    display: inline;
+}
+.dropdown-btn {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    float: right;
+    display: none;
+    margin: 16px 20px;
+    cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
@@ -122,8 +136,10 @@ footer {
     line-height: 1.5;
     margin-right: 15%;
 }
-#about .about-text h4 {
+#about h4 {
     font-size: 2em;
+    letter-spacing: 2px;
+    color: #2979FF;
 }
 #about p a {
     color: #2979FF;
@@ -143,16 +159,10 @@ footer {
     padding: 5% 0;
     display: flex;
 }
-#skills h3 {
-    margin: 0;
-}
 .skills {
-    list-style: none;
-    margin: 0;
-    flex: 1;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    padding: 0;
 }
 .list-label {
     font-weight: bold;
@@ -200,7 +210,8 @@ footer {
     font-size: 0.8em;
     font-weight: 550;
     padding: 3px 7px;
-    background-color: #d7e2f0;
+    color: #fff;
+    background-color: #9caabb;
     border-radius: 4px;
 }
 
@@ -226,6 +237,7 @@ footer {
     float: right;
     display: flex;
     margin: 0;
+    padding: 0;
     text-transform: capitalize;
 }
 .social-list-footer a {
@@ -237,4 +249,59 @@ footer {
 }
 .social-list-footer a:hover {
     text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media screen and (max-width: 800px){
+    /* Navbar */
+    .dropdown-btn{
+        display: block;
+        float: right;
+    }
+    nav .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #9caabb;
+        top: 54px;
+        left: -200%;
+        margin-top: 16px;
+        padding-top: 16px;
+        transition: all .5s;
+        text-align: center;
+        align-items: center;
+    }
+    nav .nav-menu a{
+        display: block;
+        height: 10%;
+        margin: 30px;
+        font-size: 20px;
+    }
+    .dropdown:focus-within .nav-menu{
+        left: 0;
+    }
+
+    /* Sections */
+    #about .about-text{
+        margin: 0;
+    }
+    #skills {
+        flex-wrap: wrap;
+    }
+    #portfolio {
+        flex-wrap: wrap;
+    }
+    #contact {
+        flex-wrap: wrap;
+    }
+} 
+
+@media screen and (max-width: 580px) {
+    footer {
+        display: grid;
+        place-items: center;
+    }
+    
 }
