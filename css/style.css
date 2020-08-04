@@ -99,26 +99,26 @@ nav .nav-menu a:hover {
     font-weight: 300;
     margin: 0 auto;
 }
-.social-list {
+.icon-social-list {
     list-style: none;
     display: inline-flex;
     padding: 0;
     margin: 20px auto;
     text-align: center;
 }
-.social-list a {
+.icon-social-list a {
     padding: 0 5px;
     text-decoration: none;
     color: #eee;
     font-weight: bold;
     text-transform: uppercase;
 }
-.social-list a ion-icon {
+.icon-social-list a ion-icon {
     color: #eee;
     stroke: #eee;
     font-size: 2.5em;
 }
-.social-list a ion-icon:hover {
+.icon-social-list a ion-icon:hover {
     color: #2979FF;
 }
 
@@ -250,6 +250,15 @@ nav .nav-menu a:hover {
 .social-list-footer a:hover {
     text-decoration: underline;
 }
+footer .icon-social-list {
+    margin: 16px 0 20px;
+    padding: 0 30px;
+    display: none;
+}
+footer .icon-social-list li ion-icon {
+    font-size: 1.5em;
+    color: #2979FF;
+}
 
 /*--------------------------------------------------------------
 # Media Queries
@@ -302,6 +311,14 @@ nav .nav-menu a:hover {
     footer {
         display: grid;
         place-items: center;
+        padding: 0;
     }
+    footer .icon-social-list {
+        display: flex;
+    }
+    .social-list-footer {
+        display: none;
+    }
+    
     
 }
