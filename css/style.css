@@ -203,19 +203,21 @@ nav .nav-menu a:hover {
 .stack-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding-left: 0;
     padding-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 .stack-list li {
-    margin-right: 6px;
+    margin: 6px 6px 0 0;
     font-size: 0.8em;
     font-weight: 550;
     padding: 3px 7px;
     color: #fff;
     background-color: #9caabb;
     border-radius: 4px;
+    max-lines: 1;
 }
 
 /*--------------------------------------------------------------
@@ -306,12 +308,20 @@ footer .icon-social-list li i {
         font-size: 1.8em;
     }
 
-    /* Sections */
+    /* About */
     #about .about-text{
         margin: 0;
     }
+    /* Skills */
     #skills {
         flex-wrap: wrap;
+    }
+    .skills {
+        flex-wrap: wrap;
+    }
+    .skills ul {
+        flex: 1;
+        max-width: 30%;
     }
     #portfolio {
         flex-wrap: wrap;
