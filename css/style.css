@@ -4,7 +4,7 @@ html {
 body {
     color: #444450;
     background-color: #fff;
-    font-weight: 350;
+    font-weight: 300;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 auto;
     width: 100%;
@@ -24,7 +24,7 @@ h4 {
 }
 footer {
     margin: 0;
-    padding: 30px;
+    padding: 50px 40px;
 }
 .section-title {
     width: 200px;
@@ -36,7 +36,7 @@ footer {
 # Nav-Menu
 --------------------------------------------------------------*/
 nav {
-    background-color:  #1a1d25;
+    background-color:  #212121;
     position: fixed;
     top: 0;
     width: 100%;
@@ -51,7 +51,7 @@ nav #logo {
     display: inline-block;
 }
 nav h1 a {
-    color: #fff;
+    color: #eee;
     text-decoration: none;
     display: inline-block;
     padding-left: 20px;
@@ -60,6 +60,7 @@ nav h1 a:hover {
     color: #2979FF;
 }
 nav .nav-menu a {
+    font-weight: 400;
     display: inline;
     padding: 0 10px;
 }
@@ -87,10 +88,10 @@ nav .nav-menu a:hover {
 # Home
 --------------------------------------------------------------*/
 #home {
-    background: #1a1d25;
+    background: #212121;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
+    color: #eee;
     height: 100vh;
     display: grid;
     place-items: center;
@@ -214,8 +215,8 @@ nav .nav-menu a:hover {
     font-size: 0.8em;
     font-weight: 550;
     padding: 3px 7px;
-    color: #fff;
-    background-color: #9caabb;
+    color: #2969ff;
+    border: 1px solid #2979FF;
     border-radius: 4px;
     max-lines: 1;
 }
@@ -281,7 +282,7 @@ footer .icon-social-list li i {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #9caabb;
+        background: #eee;
         top: 54px;
         left: -200%;
         margin-top: 16px;
@@ -290,7 +291,8 @@ footer .icon-social-list li i {
         text-align: center;
         align-items: center;
     }
-    nav .nav-menu a{
+    nav .nav-menu a {
+        color: #444450;
         display: block;
         height: 10%;
         margin: 30px;
@@ -312,6 +314,7 @@ footer .icon-social-list li i {
     #about .about-text{
         margin: 0;
     }
+
     /* Skills */
     #skills {
         flex-wrap: wrap;
@@ -323,9 +326,13 @@ footer .icon-social-list li i {
         flex: 1;
         max-width: 30%;
     }
+    
+    /* Portfolio */
     #portfolio {
         flex-wrap: wrap;
     }
+    
+    /* Contact */
     #contact {
         flex-wrap: wrap;
     }
