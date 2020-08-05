@@ -22,12 +22,10 @@ h3 {
 h4 {
     font-size: 2em;
 }
-footer {
-    margin: 0;
-    padding: 50px 40px;
-}
 .section-title {
     width: 200px;
+    padding-right: 80px;
+    text-align: right;
     flex-shrink: 0;
     letter-spacing: 2px;
 }
@@ -191,7 +189,7 @@ nav .nav-menu a:hover {
     display: flex;
 }
 .project-item {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .project-title {
     color: #444450;
@@ -200,6 +198,9 @@ nav .nav-menu a:hover {
 }
 .project-title:hover {
     text-decoration: underline;
+}
+.project-item p {
+    margin: 10px 0;
 }
 .stack-list {
     list-style: none;
@@ -235,6 +236,10 @@ nav .nav-menu a:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+footer {
+    margin: 0;
+    padding: 50px 40px;
+}
 .copyright {
     float: left;
 }
@@ -269,7 +274,46 @@ footer .icon-social-list li i {
 /*--------------------------------------------------------------
 # Media Queries
 --------------------------------------------------------------*/
+@media screen and (min-width: 1800px){
+    body {
+        font-size: 1.4em;
+    }
+    #about {
+        width: 50%;
+    }
+    #skills {
+        width: 50%;
+    }
+    #portfolio {
+        width: 50%;
+    }
+    #contact {
+        width: 50%;
+    }
+    footer {
+        margin: 0;
+        padding: 60px;
+    }
+}
+@media screen and (min-width: 1600px){
+    #about {
+        width: 60%;
+    }
+    #skills {
+        width: 60%;
+    }
+    #portfolio {
+        width: 60%;
+    }
+    #contact {
+        width: 60%;
+    }
+}
 @media screen and (max-width: 800px){
+    .section-title {
+        text-align: left;
+    }
+
     /* Navbar */
     .dropdown-btn{
         display: block;
@@ -282,7 +326,7 @@ footer .icon-social-list li i {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #eee;
+        background: #2e2e31;
         top: 54px;
         left: -200%;
         margin-top: 16px;
@@ -292,7 +336,7 @@ footer .icon-social-list li i {
         align-items: center;
     }
     nav .nav-menu a {
-        color: #444450;
+        color: #eee;
         display: block;
         height: 10%;
         margin: 30px;
