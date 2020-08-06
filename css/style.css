@@ -199,9 +199,6 @@ nav .nav-menu a:hover {
 .project-title:hover {
     text-decoration: underline;
 }
-.project-item p {
-    margin: 10px 0;
-}
 .stack-list {
     list-style: none;
     display: flex;
