@@ -10,9 +10,10 @@ body {
     width: 100%;
 }
 h2 {
-    font-size: 5em;
-    max-lines: 2;
+    font-size: 4.5em;
+    max-lines: 1;
     margin: 0 auto;
+    font-weight: 600;
 }
 h3 {
     font-size: 1em;
@@ -34,28 +35,30 @@ h4 {
 # Nav-Menu
 --------------------------------------------------------------*/
 nav {
-    background-color:  #212121;
+    background-color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
+    padding-bottom: 8px;
 }
 nav .nav-menu {
     list-style: none;
-    padding: 0 10px;
-    display: inline;
-}
-nav #logo {
+    margin-top: 8px;
+    padding-right: 20px;
     display: inline-block;
 }
 nav h1 a {
-    color: #eee;
+    color:  #444450;
     text-decoration: none;
-    display: inline-block;
+    float: left;
     padding-left: 20px;
 }
 nav h1 a:hover {
     color: #2979FF;
+}
+nav .nav-menu {
+    float: right;
 }
 nav .nav-menu a {
     font-weight: 400;
@@ -63,7 +66,7 @@ nav .nav-menu a {
     padding: 0 10px;
 }
 nav .nav-menu a {
-    color: #eee;
+    color:  #444450;
     text-decoration: none;
 }
 nav .nav-menu a:hover {
@@ -79,27 +82,33 @@ nav .nav-menu a:hover {
     outline: none;
     float: right;
     display: none;
-    margin: 16px 20px;
+    margin-right: 20px;
     cursor: pointer;
+}
+.dropdown .dropdown-btn .fa-bars {
+    color:  #444450;
 }
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
 #home {
-    background: #212121;
-    margin: 0 auto;
-    text-align: center;
-    color: #eee;
+    color:  #444450;
     height: 100vh;
     display: grid;
     place-items: center;
 }
+.home-text {
+    max-width: 80%;
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+}
 .subtitle {
-    color: #fff;
     text-transform: capitalize;
     font-size: 2em;
     font-weight: 300;
     margin: 0 auto;
+    letter-spacing: 2px;
 }
 .icon-social-list {
     list-style: none;
@@ -111,14 +120,13 @@ nav .nav-menu a:hover {
 .icon-social-list a {
     padding: 0 5px;
     text-decoration: none;
-    color: #eee;
+    color:  #444450;
     font-weight: bold;
     text-transform: uppercase;
 }
 .icon-social-list a i {
-    color: #eee;
     letter-spacing: 6px;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .icon-social-list a i:hover {
     color: #2979FF;
@@ -349,6 +357,9 @@ footer .icon-social-list li i {
     }
     .subtitle {
         font-size: 1.8em;
+    }
+    .icon-social-list a i {
+        font-size: 1.5em;
     }
 
     /* About */
