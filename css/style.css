@@ -106,9 +106,9 @@ nav .nav-menu a:hover {
 .subtitle {
     text-transform: capitalize;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 auto;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 .icon-social-list {
     list-style: none;
@@ -182,7 +182,7 @@ nav .nav-menu a:hover {
     max-width: 25%;
     list-style: none;
     flex-grow: 1;
-    padding: 0 40px 0 0;
+    padding: 0 20px 0 0;
     line-height: 1.5;
 }
 
