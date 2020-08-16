@@ -30,6 +30,13 @@ h4 {
     flex-shrink: 0;
     letter-spacing: 2px;
 }
+a, a i{
+    transition: all 0.2s ease-out 0s;
+}
+a:hover, a i:hover {
+    transition: all 0.2s ease-in 0s;
+}
+
 
 /*--------------------------------------------------------------
 # Nav-Menu
@@ -151,12 +158,26 @@ nav .nav-menu a:hover {
     letter-spacing: 2px;
     color: #2979FF;
 }
+#about p {
+    margin-top: 45px;
+}
 #about p a {
+    font-size: .75em;
+    font-weight: 400;
     color: #2979FF;
+    padding: 8px 12px;
+    border: 1px solid #2979FF;
+    border-radius: 6px;
     text-decoration: none;
+    text-transform: capitalize;
+
 }
 #about p a:hover {
-    text-decoration: underline;
+    background-color: #2979FF;
+    color: #fff;
+}
+span {
+    font-weight: 500;
 }
 
 /*--------------------------------------------------------------
