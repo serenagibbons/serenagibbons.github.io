@@ -37,7 +37,6 @@ a:hover, a i:hover {
     transition: all 0.2s ease-in 0s;
 }
 
-
 /*--------------------------------------------------------------
 # Nav-Menu
 --------------------------------------------------------------*/
@@ -47,39 +46,35 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
-    padding-bottom: 8px;
+    padding-bottom: 16px;
 }
 nav .nav-menu {
     list-style: none;
     margin-top: 8px;
-    padding-right: 20px;
-    display: inline-block;
+    padding: 0 20px;
+    float: right;
 }
 nav h1 a {
     color:  #444450;
     text-decoration: none;
     float: left;
-    padding-left: 20px;
+    padding: 0 20px;
 }
-nav h1 a:hover {
+nav h1 a:hover, nav h1 a:focus {
     color: #2979FF;
-}
-nav .nav-menu {
-    float: right;
 }
 nav .nav-menu a {
     font-weight: 400;
     display: inline;
     padding: 0 10px;
-}
-nav .nav-menu a {
     color:  #444450;
     text-decoration: none;
 }
-nav .nav-menu a:hover {
+nav .nav-menu a:hover, nav .nav-menu a:focus {
     color: #2979FF;
 }
 .dropdown {
+    margin: 0;
     display: inline;
 }
 .dropdown-btn {
@@ -172,7 +167,7 @@ nav .nav-menu a:hover {
     text-transform: capitalize;
 
 }
-#about p a:hover {
+#about p a:hover, #about p a:focus {
     background-color: #2979FF;
     color: #fff;
 }
@@ -225,7 +220,7 @@ span {
     text-decoration: none;
     font-weight: bold;
 }
-.project-title:hover {
+.project-title:hover, .project-title:focus {
     text-decoration: underline;
 }
 .stack-list {
