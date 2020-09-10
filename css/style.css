@@ -407,7 +407,7 @@ footer .icon-social-list li i {
     }
 } 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 588px) {
     /* Home */
     h2 {
         font-size: 3em;
@@ -425,6 +425,24 @@ footer .icon-social-list li i {
     .social-list-footer {
         display: none;
     }
-    
+}
 
+@media screen and (max-width: 505px) {
+    /* Home */
+    h2 {
+        font-size: 2.2em;
+    }
+    .subtitle {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Home */
+    h2 {
+        font-size: 1.7em;
+    }
+    .subtitle {
+        font-size: 1em;
+    }
 }
