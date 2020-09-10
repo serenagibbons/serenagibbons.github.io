@@ -121,7 +121,7 @@ nav .nav-menu a:hover, nav .nav-menu a:focus {
     text-align: center;
 }
 .icon-social-list a {
-    padding: 0 5px;
+    padding: 0 10px 0 2px;
     text-decoration: none;
     color:  #444450;
     font-weight: bold;
@@ -234,7 +234,7 @@ span {
     font-family: 'Courier New', Courier, monospace;
 }
 .stack-list li {
-    margin: 6px 6px 0 0;
+    margin-right: 6px;
     font-size: 0.8em;
     font-weight: 550;
     padding: 3px 7px;
@@ -426,5 +426,5 @@ footer .icon-social-list li i {
         display: none;
     }
     
-    
+
 }
