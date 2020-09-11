@@ -234,7 +234,7 @@ span {
     font-family: 'Courier New', Courier, monospace;
 }
 .stack-list li {
-    margin-right: 6px;
+    margin: 0 6px 6px 0; 
     font-size: 0.8em;
     font-weight: 550;
     padding: 3px 7px;
