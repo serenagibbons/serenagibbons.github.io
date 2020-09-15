@@ -18,11 +18,9 @@ window.onscroll = function() {
 function mobileNavBar() {
     var x = document.getElementById("nav-links");
     if (x.style.left == "0px") {
-        console.log("x == 0");
         x.style.left = "-100vw";
     }
     else {
-        console.log("x != 0");
         x.style.left = "0";
     }
 }
@@ -30,7 +28,6 @@ function mobileNavBar() {
 function menuLinkClick() {
     var x = document.getElementById("nav-links");
     if (x.style.left == "0px") {
-        console.log("x == 0");
         x.style.left = "-100vw";
     }
 }
