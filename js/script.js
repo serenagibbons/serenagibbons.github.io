@@ -13,3 +13,24 @@ window.onscroll = function() {
     initialPosition = currentPosition;
     }
 }
+
+// mobile navbar
+function mobileNavBar() {
+    var x = document.getElementById("nav-links");
+    if (x.style.left == "0px") {
+        console.log("x == 0");
+        x.style.left = "-100vw";
+    }
+    else {
+        console.log("x != 0");
+        x.style.left = "0";
+    }
+}
+
+function menuLinkClick() {
+    var x = document.getElementById("nav-links");
+    if (x.style.left == "0px") {
+        console.log("x == 0");
+        x.style.left = "-100vw";
+    }
+}

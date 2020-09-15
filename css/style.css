@@ -53,6 +53,7 @@ nav .nav-menu {
     list-style: none;
     margin-top: 8px;
     padding: 0 20px;
+    display: initial;
     float: right;
 }
 nav h1 a {
@@ -86,6 +87,7 @@ nav .nav-menu a:hover, nav .nav-menu a:focus {
     float: right;
     display: none;
     margin-right: 20px;
+    margin-top: -5px;
     cursor: pointer;
 }
 .dropdown .dropdown-btn .fa-bars {
@@ -343,6 +345,7 @@ footer .icon-social-list li i {
     }
     .dropdown-btn i {
         color: #fff;
+        padding-right: 6px;
     }
     nav .nav-menu {
         position: fixed;
