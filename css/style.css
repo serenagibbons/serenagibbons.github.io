@@ -9,6 +9,12 @@ body {
     margin: 0 auto;
     width: 100%;
 }
+section {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
 h2 {
     font-size: 2.5em;
     max-lines: 1;
@@ -44,25 +50,22 @@ nav {
     top: 0;
     width: 100%;
     z-index: 100;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     transition: top 0.5s ease-in-out;
+    box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 nav .nav-menu {
     list-style: none;
-    margin-top: 8px;
     padding: 0 20px;
-    display: initial;
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+}
+nav .menu-links {
     float: right;
-}
-nav h1 a {
-    color:  #444450;
-    text-decoration: none;
-    float: left;
-    padding: 0 20px;
-}
-nav h1 a:hover, nav h1 a:focus {
-    color: #2979FF;
+    margin: 0;
 }
 nav .nav-menu a {
     font-weight: 400;
@@ -97,13 +100,9 @@ nav .nav-menu a:hover, nav .nav-menu a:focus {
 # Home
 --------------------------------------------------------------*/
 #home {
-    max-width: 80%;
-    width: 70%;
     color:  #444450;
     height: 100vh;
-    margin: 0 auto;
     align-items: center;
-    display: flex;
 }
 .subtitle {
     text-transform: capitalize;
@@ -116,7 +115,7 @@ nav .nav-menu a:hover, nav .nav-menu a:focus {
     width: 256px;
     height: auto;
     border-radius: 50%;
-    margin: 10%;
+    padding: 10%;
 }
 .home-text .about-text {
     font-size: 1.2em;
@@ -164,11 +163,7 @@ li .resume:hover, li .resume:focus, .contact-link:hover, .contact-link:focus {
 # Current Work
 --------------------------------------------------------------*/
 #work {
-    max-width: 80%;
-    width: 70%;
-    margin: 0 auto;
     padding: 5% 0;
-    display: flex;
 }
 .work-header {
     display: flex;
@@ -188,11 +183,7 @@ li .resume:hover, li .resume:focus, .contact-link:hover, .contact-link:focus {
 # Skills
 --------------------------------------------------------------*/
 #skills {
-    max-width: 80%;
-    width: 70%;
-    margin: 0 auto;
     padding: 5% 0;
-    display: flex;
 }
 .skills {
     flex-grow: 1;
@@ -215,11 +206,7 @@ li .resume:hover, li .resume:focus, .contact-link:hover, .contact-link:focus {
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio {
-    max-width: 80%;
-    width: 70%;
-    margin: 0 auto;
     padding: 5% 0;
-    display: flex;
 }
 .project-item {
     margin-bottom: 20px;
@@ -256,18 +243,16 @@ li .resume:hover, li .resume:focus, .contact-link:hover, .contact-link:focus {
 # Contact
 --------------------------------------------------------------*/
 #contact {
-    max-width: 80%;
-    width: 70%;
-    margin: 0 auto;
     padding: 5% 0 10%;
-    display: flex;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 footer {
-    margin: 0;
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
 }
 .copyright {
@@ -305,44 +290,14 @@ footer .icon-social-list li i {
 # Media Queries
 --------------------------------------------------------------*/
 @media screen and (min-width: 1800px){
-    body {
-        font-size: 1.4em;
-    }
-    #about {
-        width: 50%;
-    }
     .home-img img {
-        width: 400px;
-    }
-    #skills {
-        width: 50%;
-    }
-    #portfolio {
-        width: 50%;
-    }
-    #contact {
-        width: 50%;
-    }
-    footer {
-        margin: 0;
-        padding: 60px;
-    }
-}
-@media screen and (min-width: 1600px){
-    #about {
-        width: 60%;
-    }
-    #skills {
-        width: 60%;
-    }
-    #portfolio {
-        width: 60%;
-    }
-    #contact {
-        width: 60%;
+        width: 300px;
     }
 }
 @media screen and (max-width: 800px){
+    section {
+        flex-wrap: wrap;
+    }
     .section-title {
         text-align: left;
     }
@@ -405,28 +360,12 @@ footer .icon-social-list li i {
     }
 
     /* Skills */
-    #work {
-        flex-wrap: wrap;
-    }
-    #skills {
-        flex-wrap: wrap;
-    }
     .skills {
         flex-wrap: wrap;
     }
     .skills ul {
         flex: 1;
         max-width: 30%;
-    }
-    
-    /* Portfolio */
-    #portfolio {
-        flex-wrap: wrap;
-    }
-    
-    /* Contact */
-    #contact {
-        flex-wrap: wrap;
     }
 } 
 
