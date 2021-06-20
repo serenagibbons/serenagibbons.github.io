@@ -112,13 +112,13 @@ nav .nav-menu a:hover, nav .nav-menu a:focus {
     letter-spacing: 3px;
 }
 .home-img img {
-    width: 256px;
+    width: 220px;
     height: auto;
     border-radius: 50%;
     padding: 10%;
 }
 .home-text .about-text {
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
 }
 .about-text b {
@@ -128,7 +128,7 @@ nav .nav-menu a:hover, nav .nav-menu a:focus {
     list-style: none;
     display: inline-flex;
     padding: 0;
-    margin: 20px auto;
+    margin: 0 auto;
     align-items: center;
 }
 .icon-social-list a {
@@ -253,7 +253,7 @@ footer {
     max-width: 900px;
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
+    padding-top: 5%;
 }
 .copyright {
     float: left;
@@ -313,6 +313,7 @@ footer .icon-social-list li i {
     }
     nav .nav-menu {
         position: fixed;
+        max-width: 100%;
         width: 100%;
         height: 100vh;
         background: #fff;
@@ -334,6 +335,10 @@ footer .icon-social-list li i {
     }
     .dropdown:focus-within .nav-menu{
         left: 0;
+    }
+    .menu-links {
+        float: left;
+        width: 100%;
     }
 
     /* Home */
